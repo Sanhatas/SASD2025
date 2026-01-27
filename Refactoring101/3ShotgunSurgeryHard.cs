@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Refactoring101.ShotgunSurgeryHard;
 
+// Not modufied version
 public class Customer
 {
     public required string Name { get; set; }

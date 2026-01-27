@@ -9,25 +9,26 @@ namespace Refactoring101;
 public class MysteriousName
 {
     // 1.1
-    // Bad naming
-    public double Calc(double a, double b) 
+    // Better naming
+    public double Average(double a, double b) 
     {
         return (a + b) / 2;
     }
 }
 
 // 1.2
-// Bad Naming
-public class SomeDataStructure
+// Better Naming
+public class Queue
 {
-    // ...
-    public int Read()
+    // read() -> Dequeue()
+    public int Dequeue()
     {
         //...
         throw new NotImplementedException("Ongoing implementation");
     }
 
-    public void Write(int value)
+    // write() -> Enqueue()
+    public void Enqueue(int value)
     {
         // ...
     }

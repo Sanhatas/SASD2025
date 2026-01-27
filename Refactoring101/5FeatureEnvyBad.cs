@@ -11,11 +11,14 @@ public class FeatureEnvy
 {
     public void TestAdd()
     {
-        var point = AddPoint(new Point(2, 3), new Point(4, 5));
-    }
-    public Point AddPoint(Point a, Point b)
-    {
-        return new Point(a.X + b.X, a.Y + b.Y);
+        // First Idea
+        //var point = Point.Add(new Point(2, 3), new Point(4, 5));
+
+        // Second Idea
+        //var point = new Point(2, 3).Add(new Point(4, 5));
+
+        // Third Idea
+        var point = new Point(2, 3) + new Point(4, 5);
     }
 }
 
@@ -27,5 +30,25 @@ public class Point
     {
         X = x;
         Y = y;
+    }
+
+    // First Idea
+    //public static Point Add(Point a, Point b)
+    //{
+    //    return new Point(a.X + b.X, a.Y + b.Y);
+    //}
+
+
+    // Second Idea
+    // a.Add(b);
+    //public static Point Add(Point b)
+    //{
+    //    return new Point(this.X + b.X, this.Y + b.Y);
+    //}
+
+    // Third Idea
+    public static Point operator +(Point a, Point b)
+    {
+        return new Point(a.X + b.X, a.Y + b.Y);
     }
 }

@@ -9,8 +9,15 @@ namespace Refactoring101.DataClump1;
 // 4.1
 public class DataClump1
 {
-    public void Print(string name, string address, int age)
+    public void Print(Customer customer)
     {
         // ...
     }
+}
+
+public class Customer
+{
+    public required string Name { get; set; }
+    public required string Address { get; set; }
+    public required int Age { get; set; }
 }

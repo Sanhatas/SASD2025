@@ -8,10 +8,21 @@ using System.Threading.Tasks;
 namespace Refactoring101.DataClump2;
 
 // 4.2
-public class DataClump2
+public class DataClump2Good
 {
-    public (double, double) AddPoint(double x1, double y1, double x2, double y2)
+    public Point AddPoint(Point a, Point b)
     {
-        return ((x1 + y1), (x2+y2));
+        return new Point(a.X + b.X, a.Y + b.Y);
+    }
+}
+
+public class Point
+{
+    public double X { get; }
+    public double Y { get; }
+    public Point(double x, double y)
+    {
+        X = x;
+        Y = y;
     }
 }

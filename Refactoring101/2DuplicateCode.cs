@@ -9,11 +9,23 @@ namespace Refactoring101;
 // 2
 public class DuplicateCode
 {
+    string name = "Jimmy";
+
     public void Run()
     {
-        Console.WriteLine("Owner : " + "Jimmy");
+        PrintName("Owner:");
+        PrintBody();
+        PrintName("Signed");
+    }
+
+    private void PrintName(string label)
+    {
+        Console.WriteLine(label + " : " + name);
+    }
+
+    private void PrintBody()
+    {
         Console.WriteLine("...");
-        Console.WriteLine("Signed : " + "Jimmy");
     }
 }
 
