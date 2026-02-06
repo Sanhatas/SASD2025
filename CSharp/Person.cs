@@ -15,6 +15,18 @@ namespace CSharp;
     }
 }*/
 
+public class Person
+{
+    private string name; // backing field
+    //public string Name
+    //{
+    //    get => name; // or get { return name; }
+    //    set => name = value; // or set { name = value;}
+    //}
+
+    public string Name { get; set; }
+}
+
 public class Person1
 {
     public string Name { get; private set; }
