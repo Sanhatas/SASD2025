@@ -6,7 +6,7 @@ using SkiaSharp.HarfBuzz;
 namespace SkiaLiteUI;
 
 // adapted from: https://gist.github.com/tottaka/702c5103b9574bcf773cfd53b669b888
-public class SkiaTest : IDisposable , Renderer
+public class SkiaTest : IDisposable //, Renderer
 {
     // todo: make nullable
     GRGlInterface grgInterface;

@@ -9,7 +9,7 @@ public class TextWidget : Widget
     public string Text { get; set; } = "";
     public required SKFont Font { get; set; }
 
-    public override void DrawSelf(SKCanvas canvas)
+    public override void Draw(SKCanvas canvas)
     {
         using SKPaint paint = Util.CreatePaint(SKColors.Black);
         canvas.DrawShapedText(Text, Position.X, Position.Y,

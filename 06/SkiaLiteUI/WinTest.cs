@@ -11,7 +11,6 @@ public class WinTest
 {
     public void Run()
     {
-        Renderer renderder = new SkiaTest();
-        new GLWindow("Title", 1920/2, 1080/2, renderder).Run();
+        new GLWindow("Title", 1920, 1080).Run();
     }
 }
